@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reset</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+</head>
+
+<body>
+
+    <img  id="dark-rect" src="../img/dark_Rectangle348.png" alt="rect">
+    <img id="side-rect" src="../img/Rectangle348.png" alt="rect">
+
+    <div class="container">
+
+        <div class="topbar">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Wizick">
+            </div>
+            <i><img class="icon menu" src="../img/icon/align-left.png" alt="" hidden></i>
+            <input type="checkbox" id="switch-mode" hidden>
+            <label for="switch-mode" class="switch-mode">
+                <i><img src="../img/icon/sun.png" alt=""></i>
+                <i><img class="moon" src="../img/icon/moon.png" alt=""></i>
+            </label>
+        </div>
+<!-- <img src="../img/WIZICKLOGO.png" class="wizick-logo-t" alt=""> -->
+        <section id="sect-1">
+            <div id="login-img" class="sect-1">
+                <img src="../img/Group374.png" alt="Reset Password">
+            </div>
+            <div id="form" class="sect-1">
+                <div class="sect-head">
+                    <h1>Reset <span>Password</span></h1>
+                    <p>Your New Password Must be Different <br>
+                        from Previously Used Password</p>
+                </div>
+
+
+                <form action="#">
+                    <label for="password" class="input-label">New Password</label>
+                    <input type="password" id="npwd" name="npwd" placeholder="Enter New Password" required>
+
+                    <label for="password" class="input-label">Confirm Password</label>
+                    <input type="password" id="cpwd" name="cpwd" placeholder="Confirm Password" required> <br>
+
+                    <input type="submit" value="Save">
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+
+
+
+<script src="../js/script.js"></script>
+</html>

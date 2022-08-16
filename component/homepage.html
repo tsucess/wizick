@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img id="dark-rect" src="../img/dark_Rectangle348.png" alt="rect" hidden>
+        <img id="side-rect" src="../img/Rectangle348.png" alt="rect" hidden>
+
+        <!-- Sidebar Starts  -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Wizick">
+            </div>
+            <ul class="side-menu top">
+                <li class="tablinks" id="defaultOpen" onclick="openTab(event, 'home-page')">
+                    <a href="#">
+                        <i><img class="icon" src="../img/icon/home.png" alt=""></i>
+                        <div>Home</div>
+                    </a>
+                </li>
+                <li id="dash-tab" class="tablinks" onclick="openTab(event, 'dash-board')">
+                    <a href="#">
+                        <i> <img class="icon" src="../img/icon/dashboard.png" alt=""></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li id="docManager-tab" class="tablinks" onclick="openTab(event, 'doc-manager')">
+                    <a href="#">
+                        <i> <img class="icon" src="../img/icon/icon-park-outline_category-management.png" alt=""></i>
+                        <div>Document Manager</div>
+                    </a>
+                </li>
+                <li id="editor-tab" class="tablinks" onclick="openTab(event, 'tinymce-editor')">
+                    <a href="#">
+                        <i><img class="icon" src="../img/icon/akar-icons_edit.png" alt=""></i>
+                        <div> Document Editor</div>
+                    </a>
+                </li>
+                <li id="clause-tab" class="tablinks" onclick="openTab(event, 'clauselibrary')">
+                    <a href="#">
+                        <i> <img class="icon" src="../img/icon/library.png" alt=""></i>
+                        <div> Clause Library</div>
+                    </a>
+                </li>
+                <li id="temp-tab" class="tablinks" onclick="openTab(event, 'community-temp')">
+                    <a href="#">
+                        <i> <img class="icon" src="../img/icon/heroicons-outline_template.png" alt=""></i>
+                        <div>Template</div>
+                    </a>
+                </li>
+                <li id="insight-tab" class="tablinks" onclick="openTab(event, 'insight-sect')">
+                    <a href="#">
+                        <i> <img class="icon" src="../img/icon/gg_insights.png" alt=""></i>
+                        <div> Insight</div>
+                    </a>
+                </li>
+                <li id="legal-tab" class="tablinks" onclick="openTab(event, 'legal-terminology')">
+                    <a href="#">
+                        <i><img class="icon" src="../img/icon/legal.png" alt=""></i>
+                        <div> Legal Terminology</div>
+                    </a>
+                </li>
+
+                <hr>
+
+                <li class="username tablinks" id="user-tab" onclick="openTab(event, 'user')">
+                    <a href="#">
+                        <div class="profile-pic-div">
+                            <img src="../img/nodp.png" class="display-pic" alt="">
+                        </div>
+                        <div>Wizick User</div>
+                    </a>
+                </li>
+                <li id="notification-tab" class="tablinks" onclick="openTab(event, 'notifications')">
+                    <a href="#">
+                        <i><img class="icon" src="../img/icon/Notification.png" alt=""></i>
+                        <div> Notification <span class="notify">2</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./signin.html">
+                        <i> <img class="icon" src="../img/icon/logout.png" alt=""></i>
+                        <div> Log out</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Sidebar Starts  -->
+
+        <div class="main">
+            <div class="topbar">
+                <i><img class="icon menu" src="../img/icon/align-left.png" alt=""></i>
+                <input type="checkbox" id="switch-mode" hidden>
+                <label for="switch-mode" class="switch-mode">
+                    <i><img src="../img/icon/sun.png" alt=""></i>
+                    <i><img class="moon" src="../img/icon/moon.png" alt=""></i>
+                </label>
+            </div>
+
+            <!-- Home-Section Starts  -->
+            <div id="home-page" class="home-section tabcontent animate__animated animate__fadeInLeft">
+                <div id="top-section">
+                    <div class="title">
+                        <h1>Save Manage <br> & Edit Documents</h1>
+                        <p>Wizick is the leading destination to find, create, upload,
+                            <br> manage and every other things you can do with documents
+                        </p>
+                        <!-- <button>Get Started <img src="./img/icon/Union.png" alt=""></button> -->
+                    </div>
+                    <div class="title">
+                        <img src="../img/undraw_collecting_re_lp6p2.png" alt="homeimage" srcset="" class="img-shadow">
+                    </div>
+                </div>
+
+                <section id="cards">
+                    <label for="file" class="card">
+                        <div>
+                            <img src="../img/FileTransfer.png" alt="homeimage">
+                            <p>Upload Document</p>
+                        </div>
+                    </label>
+                    <input type="file" id="file" hidden>
+                    <div id="goto-doc-editor" class="card a-second">
+                        <div>
+                            <img class="img-2" src="../img/Blog_writing.png" alt="homeimage" srcset="">
+                            <p>Create Document</p>
+                        </div>
+                    </div>
+                    <div id="goto-template" class="card">
+                        <div>
+                            <img class="img-3" src="../img/undraw_typewriter_re_u9i2.png" alt="homeimage" srcset="">
+                            <p>Use Template</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Home-Section Ends  -->
+
+
+
+
+
+
+
+            <!-- Dashboard Section Starts -->
+            <section id="dash-board" class="dashboard tabcontent animate__animated animate__fadeInLeft">
+                <div class="title">
+                    <h2>Total number of Contracts: <span>45</span></h2>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="number">20</div>
+                            <div class="card-name">Contracts Under Drafting</div>
+                        </div>
+                        <div class="icon-box">
+                            <i><img src="../img/icon/Vector1.png" alt=""></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="number">10</div>
+                            <div class="card-name">Contracts Under Negotiation</div>
+                        </div>
+                        <div class="icon-box">
+                            <i><img src="../img/icon/Vector2.png" alt=""></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="number">15</div>
+                            <div class="card-name">Contracts Pending for E-signature</div>
+                        </div>
+                        <div class="icon-box">
+                            <i><img src="../img/icon/Vector3.png" alt=""></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="chart" id="doughnut-chart">
+                        <h2>CONTRACTS</h2>
+                        <div>
+                            <canvas id="doughnutChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <h2>CONTRACTS DUE FOR EXPIRY</h2>
+                        <div>
+                            <canvas id="barChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Dashboard Section Ends -->
+
+
+
+
+
+
+
+
+            <!-- Doc Manager-Section Starts  -->
+            <section id="doc-manager" class="doc-section tabcontent animate__animated animate__fadeInRight">
+                <div id="top-section">
+                    <div class="title">
+                        <h1>Documents Manager </h1>
+                        <p>Access and manage all your documents
+                            <br> with few clicks.
+                        </p>
+                        <!-- <button>Get Started <img src="./img/icon/Union.png" alt=""></button> -->
+                    </div>
+                    <div class="title">
+                        <img src="../img/undraw_file_manager_re_ms29.png" alt="homeimage" srcset="" class="img-shadow">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <select name="filetype">
+                        <option value="">File Name</option>
+                        <option value="pdf">Parties Involve</option>
+                    </select>
+                    <input type="text" placeholder="Select search type" id="doc-search">
+                    <button hidden><i><img src="" alt=""></i> Search</button>
+                    <input type="date" id="date" placeholder="dd/mm/yy">
+                    <input type="submit" name="submit" id="btn-submit" placeholder="Submit">
+                </div>
+
+                <div class="btn-section">
+                    <button id="btn-download">Download</button>
+                    <button id="btn-view">View</button>
+                    <button id="btn-rename">Rename</button>
+                    <button id="btn-edit">Edit</button>
+                    <button id="btn-delete">Delete</button>
+                    <button id="btn-sign">E-Sign</button>
+                </div>
+
+                <section id="table">
+                    <table id="documents">
+                        <tr>
+                            <th>Select</th>
+                            <th>Index</th>
+                            <th>Parties</th>
+                            <th>icon</th>
+                            <th>Title</th>
+                            <th>Users</th>
+                            <th>Statuses</th>
+                            <th>Created ON</th>
+                            <th>Insight</th>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="select-file" id=""></td>
+                            <td>1</td>
+                            <td>Kazmaus, Wizick</td>
+                            <td><img src="../img/icon/ms-word.png" alt=""></td>
+                            <td class="file-name">GENERAL POWER OF AN ATTORNEY</td>
+                            <td>ADMIN</td>
+                            <td>TO DO <i><br><img src="../img/icon/todo.png" alt=""></i></td>
+                            <td class="file">24-03-22</td>
+                            <td><button class="btn-create-insight btn-add-insight">Add <i><img src="../img/icon/add.png"
+                                            alt=""></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="select-file"></td>
+                            <td>2</td>
+                            <td>Harshita, Aporva</td>
+                            <td><img src="../img/icon/ms-word.png" alt=""></td>
+                            <td class="file-name">SOFTWARE DEVELOPMENT AGREEMENT 10</td>
+                            <td>ADMIN</td>
+                            <td>Completed <i><br><img src="../img/icon/complete.png" alt=""></i></td>
+                            <td class="file">24-03-22</td>
+                            <td><button class="btn-create-insight btn-update-insight">Update <i><img
+                                            src="../img/icon/update.png" alt=""></i></button> </td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="select-file"></td>
+                            <td>3</td>
+                            <td>Kazmaus, Wizick</td>
+                            <td><img src="../img/icon/ms-word.png" alt=""></td>
+                            <td class="file-name">BILL OF SALES EDITED 14</td>
+                            <td>ADMIN</td>
+                            <td>Completed<i><br><img src="../img/icon/complete.png" alt=""></i></td>
+                            <td class="file">24-03-22</td>
+                            <td><button class="btn-create-insight btn-update-insight">Update <i><img
+                                            src="../img/icon/update.png" alt=""></i></button> </td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="select-file"></td>
+                            <td>4</td>
+                            <td>Kazmaus, Wizick</td>
+                            <td><img src="../img/icon/ms-word.png" alt=""></td>
+                            <td class="file-name">SOFTWARE DEVELOPMENT AGREEMENT 2</td>
+                            <td>ADMIN</td>
+                            <td>Completed<i><br><img src="../img/icon/complete.png" alt=""></i></td>
+                            <td class="file">24-03-22</td>
+                            <td><button class="btn-create-insight btn-update-insight">Update <i><img
+                                            src="../img/icon/update.png" alt=""></i></button> </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!--******* Insight- Section II for Create Insight Starts *****-->
+                <div class="in-active-7 animate__animated animate__fadeInRight">
+                    <section class="insight-ii">
+                        <div class="title">
+                            <h2>Create your Insights</h2>
+                            <p>Enter your Insight information below</p>
+                        </div>
+
+                        <div class="form-section">
+                            <form action="#">
+                                <div class="col">
+                                    <label for="category">Parties Involved</label>
+                                    <p>(max space 255 chars and please use comma to seperate)</p>
+                                    <input type="text" id="catname" name="categoryname" placeholder="Fill in answer">
+
+                                    <label for="category">Liability Cap</label>
+                                    <p>(max space 255 chars and please use comma to seperate the value)</p>
+                                    <input type="text" id="catname" name="categoryname" placeholder="Fill in answer">
+                                </div>
+                                <div class="col">
+                                    <label for="category">Consideration</label>
+                                    <p>max value 1000 cr. please don't use comma to seperate the value</p>
+                                    <input type="text" id="catname" name="categoryname" placeholder="Fill in answer">
+
+                                    <label for="category">Term</label>
+                                    <p>please mention term in years as a whiole number</p>
+                                    <input type="text" id="catname" name="categoryname" placeholder="Fill in answer">
+                                </div>
+                                <div class="cards">
+                                    <div class="card">
+                                        <label for="category">Effective Date</label>
+                                        <input type="date" id="catname" name="categoryname"
+                                            placeholder="Fill in answer">
+                                    </div>
+                                    <div class="card">
+                                        <label for="category">Expiry Date</label>
+                                        <input type="date" id="catname" name="categoryname"
+                                            placeholder="Fill in answer">
+                                    </div>
+                                    <div class="card todo">
+                                        <label for="category">Document Status</label>
+                                        <p>max space 255 chars</p>
+                                        <select name="filetype">
+                                            <option value="">To Do</option>
+                                            <option value="pdf">In Progress</option>
+                                            <option value="doc">Completed</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <div class="text-area">
+                                    <label for="category">Additional Comment</label>
+                                    <p>(max space 255 chars and please use comma to seperate)</p>
+                                    <textarea name="" id="" cols="60" rows="5">Fill in the Answer</textarea>
+                                    <input type="submit" value="Upload Insight">
+                                    <input type="button" value="Cancel" id="btn-cancel">
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                <!--**** Insight- Section II for Create Insight Ends *****-->
+
+
+            </section>
+            <!-- Document Manager-Section Ends  -->
+
+
+
+
+
+
+
+            <!-- Document Editor-Section Starts  -->
+            <section id="tinymce-editor" class="editor-section tabcontent animate__animated animate__fadeInRight">
+                <textarea id="editor">
+                    <h1 style="text-align: center;">Hello&rsquo;s our Document Management editing project??&nbsp;</h1>
+                    <p style="text-align: center;">Are you:</p>
+                    <table style="border-collapse: collapse; width: 100%;" border="1">
+                        <colgroup>
+                            <col style="width: 50%;">
+                            <col style="width: 50%;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;"><strong><span style="font-size: 36pt;">📝</span><br><br>Building a next-generation document creation solution</strong> and want to offer the best rich text editing experience to your content creators?</td>
+                                <td>
+                                    <p style="text-align: center;"><span style="font-size: 36pt;"><strong>🗂️</strong></span></p>
+                                    <p style="text-align: center;"><strong>Dtetur adour Document Management editing project?onsectetur vel in deserunt aspernatur est reprehenderit sunt</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="text-align: center;">tetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic&rsquo;s trusted by <a href="https://tiny.cloud" target="_blank" rel="noopener">1.5M developers</a>.</p>
+                    <h3>Curious about TinyMCE?</h3>
+                    <p>tetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic:</p>
+                    <ul>
+                        <li>r adipisicing elit. Praesentium magnam consectetur</li>
+                        <li>r adipisicing elit. Praesentium magnam consectetur</li>
+                        <li>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla</li>
+                        <li> tempora soluta ea et odio, unde doloremque repellendus iure, iste!</li>
+                    </ul>
+                </textarea>
+                <!-- <h1>Integrate Editor Here</h1> -->
+
+            </section>
+            <!-- Document Editor-Section Ends  -->
+
+
+
+            <!-- Save with Template Section Starts -->
+            <div class="in-active-11 animate__animated animate__fadeIn">
+                <section id="save-as-temp">
+                    <button class="btn-preview">Preview</button>
+                    <div id="cards">
+                        <div id="form" class="card">
+                            <div class="sect-head">
+                                <h1><span>Questions</span></h1>
+                            </div>
+
+                            <form action="#">
+                                <label for="" class="input-label">What is question No. 1?</label>
+                                <input type="text" id="" name="" placeholder="Fill in Questions">
+                                <button class="btn-copy">Copy answer tag</button>
+                                <label for="" class="input-label">What is question No. 2?</label>
+                                <input type="text" id="" name="" placeholder="Fill in Questions">
+                                <button class="btn-copy">Copy answer tag</button>
+                                <label for="" class="input-label">What is question No. 3?</label>
+                                <input type="text" id="" name="" placeholder="Fill in Questions">
+                                <button class="btn-copy">Copy answer tag</button>
+                                <label for="" class="input-label">What is question No. 4?</label>
+                                <input type="text" id="" name="" placeholder="Fill in Questions">
+                                <button class="btn-copy">Copy answer tag</button>
+
+                            </form>
+                        </div>
+                        <div class="card index">
+
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn-save-temp-next">Next</button>
+                    <button class="btn-save-temp-cancel">Cancel</button>
+                    <button class="btn-save-temp-finish active">Finish</button>
+                </section>
+            </div>
+            <!-- Save with Template Section Ends -->
+
+
+
+
+
+
+
+            <!-- Clause-library Starts  -->
+            <section id="clauselibrary" class="clause-library tabcontent ">
+                <div class="sidebar-2 animate__animated animate__fadeInRight">
+                    <div class="title">
+                        <h2>Clause Library</h2>
+                        <a href="#"><i class="icon"> <img src="../img/icon/close.png" alt="" id="expand"></i></a>
+                        <a href="#"><i class="icon"> <img src="../img/icon/expand.png" alt="" id="btn-close"></i></a>
+                    </div>
+                    <div class="form-section">
+                        <form action="">
+                            <select name="favourite" class="selection favourite">
+                                <option value="">Favourite</option>
+                                <option value="pdf">PDF</option>
+                                <option value="doc">Ms-Word</option>
+                                <option value="xls">Ms-Excel</option>
+                                <option value="ppt">Ms-PowerPoint</option>
+                            </select><br>
+                            <label for="clause-category">Clause Categories</label>
+                            <input type="search" placeholder="Search Category" id="clause-search">
+                        </form>
+                    </div>
+
+                    <div id="A1"></div>
+                    <div class="words">
+                        <div class="list">
+                            <ul>
+                                <li>Acceptance</li>
+                                <li>Additional Acts</li>
+                                <li>Affiliate</li>
+                                <li>Affirmitive Covenants</li>
+                                <li>Agreement</li>
+                                <li>Amendment</li>
+                                <li>Application</li>
+                                <li>Assignment</li>
+                                <li>Audit</li>
+                                <div id="B1"></div>
+                                <li>Banding Effect</li>
+                                <li>Background</li>
+                                <li>Branding</li>
+                                <li>Breach of Confidential</li>
+                                <li>Business Community</li>
+                                <div id="C1"></div>
+                                <li>Change</li>
+                                <li>Challenge</li>
+                                <li>Channel</li>
+                                <li>Claim</li>
+                                <div id="D1"></div>
+                                <li>Drained</li>
+                                <li>Dry Land</li>
+                                <li>Data Analysis</li>
+                                <li>Dark Room</li>
+                                <div id="E1"></div>
+                                <div id="F1"></div>
+                                <div id="G1"></div>
+                                <div id="H1"></div>
+                                <div id="I1"></div>
+                                <div id="J1"></div>
+                                <div id="K1"></div>
+                                <div id="L1"></div>
+                                <div id="M1"></div>
+                                <div id="N1"></div>
+                                <div id="O1"></div>
+                                <div id="P1"></div>
+                                <div id="Q1"></div>
+                                <div id="R1"></div>
+                                <div id="S1"></div>
+                                <div id="T1"></div>
+                                <div id="U1"></div>
+                                <div id="V1"></div>
+                                <div id="W1"></div>
+                                <div id="X1"></div>
+                                <div id="Y1"></div>
+                                <div id="Z1"></div>
+                            </ul>
+                        </div>
+                        <div class="inner-nav">
+                            <ul>
+                                <li><a href="#" class="active">ALL</a></li>
+                                <li><a href="#A1">A</a></li>
+                                <li><a href="#B1">B</a></li>
+                                <li><a href="#C1">C</a></li>
+                                <li><a href="#D1">D</a></li>
+                                <li><a href="#E1">E</a></li>
+                                <li><a href="#F1">F</a></li>
+                                <li><a href="#G1">G</a></li>
+                                <li><a href="#H1">H</a></li>
+                                <li><a href="#I1">I</a></li>
+                                <li><a href="#J1">J</a></li>
+                                <li><a href="#K1">K</a></li>
+                                <li><a href="#L1">L</a></li>
+                                <li><a href="#M1">M</a></li>
+                                <li><a href="#N1">N</a></li>
+                                <li><a href="#O1">O</a></li>
+                                <li><a href="#P1">P</a></li>
+                                <li><a href="#Q1">Q</a></li>
+                                <li><a href="#R1">R</a></li>
+                                <li><a href="#S1">S</a></li>
+                                <li><a href="#T1">T</a></li>
+                                <li><a href="#U1">U</a></li>
+                                <li><a href="#V1">V</a></li>
+                                <li><a href="#W1">W</a></li>
+                                <li><a href="#X1">X</a></li>
+                                <li><a href="#Y1">Y</a></li>
+                                <li><a href="#Z1">Z</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="clauses" class="animate__animated animate__fadeInUp">
+                        <h3>Acceptance</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ducimus eveniet, eius voluptatum similique fugit consequatur
+                            ullam illum culpa eaque, est dolores temporibus molestiae 
+                            nobis dicta, recusandae veniam molestias accusamus aliquid?
+                        </p>
+                    </div>
+                </div>
+                <div  class="inner-sect animate__animated animate__fadeIn">
+                    <form class="search-bar">
+                        <input type="text" id="input-search" placeholder="Search Clause" name="search">
+                        <button type="button" id="btn-search"><i class="icon"><img src="../img/icon/search.png"
+                                    alt=""></i></button>
+                    </form>
+                </div>
+
+                <div id="all-clause" class="inner-sect clause animate__animated animate__fadeIn">
+                    <div class="item">
+                        <h3>CL03 TR</h3>
+                        <h4>Lorem 1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.
+                            Fusce posuere,
+                            magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros
+                            quis urna.
+                            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.</p>
+                    </div>
+                    <div class="item">
+                        <h3>CL04 TR</h3>
+                        <h4>Lorem 2</h4>
+                        <p>Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna.
+                            Integer nulla.
+                            Donec blandit feugiat ligula. Donec hendrerit, felis et imperdiet euismod, purus ipsum
+                            pretium metus,
+                            in lacinia nulla nisl eget sapien. Donec ut est in lectus consequat consequat.</p>
+                    </div>
+                    <div class="item">
+                        <h3>CL05 TR</h3>
+                        <h4>Lorem 3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.
+                            Fusce posuere,
+                            magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros
+                            quis urna.
+                            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.</p>
+                    </div>
+                </div>
+
+                <div class="in-active-6 animate__animated animate__fadeIn">
+                    <section class="clause-editor">
+                        <textarea id="editor">
+                            <h1 style="text-align: center;">Hello&rsquo;s our Document Management editing project??&nbsp;</h1>
+                            <p style="text-align: center;">Are you:</p>
+                            <table style="border-collapse: collapse; width: 100%;" border="1">
+                                <colgroup>
+                                    <col style="width: 50%;">
+                                    <col style="width: 50%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center;"><strong><span style="font-size: 36pt;">📝</span><br><br>Building a next-generation document creation solution</strong> and want to offer the best rich text editing experience to your content creators?</td>
+                                        <td>
+                                            <p style="text-align: center;"><span style="font-size: 36pt;"><strong>🗂️</strong></span></p>
+                                            <p style="text-align: center;"><strong>Dtetur adour Document Management editing project?onsectetur vel in deserunt aspernatur est reprehenderit sunt</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p style="text-align: center;">tetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic&rsquo;s trusted by <a href="https://tiny.cloud" target="_blank" rel="noopener">1.5M developers</a>.</p>
+                            <h3>Curious about TinyMCE?</h3>
+                            <p>tetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic:</p>
+                            <ul>
+                                <li>r adipisicing elit. Praesentium magnam consectetur</li>
+                                <li>r adipisicing elit. Praesentium magnam consectetur</li>
+                                <li>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla</li>
+                                <li> tempora soluta ea et odio, unde doloremque repellendus iure, iste!</li>
+                            </ul>
+                        </textarea>
+                        <!-- <h1>Integrate Editor Here</h1> -->
+
+                    </section>
+                </div>
+            </section>
+            <!-- Clause-library Ends  -->
+
+
+
+
+
+
+            <!-- Community Template Starts -->
+            <section id="community-temp" class="com-template tabcontent">
+                <img src="../img/group77.png" class="document-img" alt="">
+                <div class="btn-section">
+                    <button class="btn-community active" id="">Community</button>
+                    <button class="btn-template" id="btn-my-template">Template</button>
+                </div>
+                <div class="inner-sect">
+                    <form class="search-bar" action="#">
+                        <input type="text" placeholder="Search for documents" id="file-search-comTemp" name="search">
+                        <i class="icon"><img src="../img/icon/search.png" alt=""></i>
+                    </form>
+                </div>
+                <div class="title">
+                    <h2>Surf through <br><span>Community Documents</span></h2>
+                </div>
+
+                <div class="btn-nav">
+                    <button><img class="icon" id="btn-com-left" src="../img/icon/union-back.png" alt=""></button>
+                    <span>Categories</span>
+                    <button><img class="icon" id="btn-com-right" src="../img/icon/union-forward.png" alt=""></button>
+                </div>
+                <div id="cards" class="comm-cards">
+                    <a href="#" class="card">
+                        <div>
+                            <img src="../img/icon/folder.png" alt="homeimage" srcset="">
+                            <p>Real Estate Agreement</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card a-second">
+                        <div>
+                            <img class="img-2" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                            <p>Employee Contract</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div>
+                            <img class="img-3" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                            <p>Jaso</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div>
+                            <img src="../img/icon/folder.png" alt="homeimage" srcset="">
+                            <p>My Estate Agreement</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card a-second">
+                        <div>
+                            <img class="img-2" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                            <p>Employee Contract Agreement</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card">
+                        <div>
+                            <img class="img-3" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                            <p>Contract Agreement Jaso</p>
+                        </div>
+                    </a>
+
+                </div>
+
+
+
+
+                <!--********* My Template Section Starts  *******-->
+                <div class="in-active-5">
+                    <img src="../img/group77.png" class="temp-document-img" alt="">
+                    <section class="my-template">
+                        <div class="btn-section">
+                            <button class="btn-community" id="btn-my-community">Community</button>
+                            <button class="btn-template active" id="btn-my-template">Template</button>
+                            <!-- <button class="btn-new-template" id="btn-new-template">Create New Template</button> -->
+                        </div>
+                        <div class="inner-sect">
+                            <form class="search-bar">
+                                <input type="text" placeholder="Search for documents" id="file-search-myTemp"
+                                    name="search">
+                                <i class="icon"><img src="../img/icon/search.png" alt=""></i>
+                            </form>
+                        </div>
+                        <div class="title">
+                            <h2>Surf through <br><span>Community Documents</span></h2>
+                        </div>
+
+                        <div class="btn-nav">
+                            <button><img class="icon" id="btn-temp-left" src="../img/icon/union-back.png"
+                                    alt=""></button>
+                            <span>Categories</span>
+                            <button><img class="icon" id="btn-temp-right" src="../img/icon/union-forward.png"
+                                    alt=""></button>
+                        </div>
+                        <div id="cards" class="mytemp-cards">
+                            <a href="#" class="card-1 btn-corporate">
+                                <div>
+                                    <img class="temp-icon" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                    <p>Corporate Agreement</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card-1 a-second">
+                                <div>
+                                    <img class="temp-icon img-2" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                    <p>Company</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card-1">
+                                <div>
+                                    <img class="temp-icon img-3" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                    <p>Jv</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card-1">
+                                <div>
+                                    <img class="temp-icon img-3" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                    <p>Jaso</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card-1">
+                                <div>
+                                    <img class="temp-icon" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                    <p>My Estate Agreement</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card-1">
+                                <div>
+                                    <img class="temp-icon img-2" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                    <p>Employee Contract Agreement</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card-1">
+                                <div>
+                                    <img class="temp-icon img-3" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                    <p>Contract Agreement Jaso</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <!-- Create Template I Section Starts -->
+                        <div class="in-active-12 animate__animated animate__fadeIn">
+                            <section class="create-temp">
+
+                                <div class="title">
+                                    <h2>Create your Template</h2>
+                                    <p>Enter your Template information below</p>
+                                </div>
+
+                                <div class="form-section">
+                                    <span>Choose a category type:</span>
+                                    <select name="filetype">
+                                        <option value="">Existing Category</option>
+                                        <option value="corp">Corporate Agreement</option>
+                                        <option value="jv">Software Development</option>
+                                        <option value="comp">Company</option>
+                                        <option value="jv">Jv</option>
+                                    </select>
+                                </div>
+
+                                <div class="cards">
+                                    <a href="#" class="card">
+                                        <div>
+                                            <img src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                            <p>Corporate Agreement</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card a-second">
+                                        <div>
+                                            <img class="img-2" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                            <p>Company</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card">
+                                        <div>
+                                            <img class="img-3" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                            <p>Jv</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cards">
+                                    <a href="#" class="card">
+                                        <div>
+                                            <img src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                            <p>Software Development</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card a-second">
+                                        <div>
+                                            <img class="img-2" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                            <p>Company Agreement</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="card">
+                                        <div>
+                                            <img class="img-3" src="../img/icon/folder.png" alt="homeimage" srcset="">
+                                            <p>Software Development</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- Create Template I Section Starts -->
+
+
+                        <!-- Create Template II Section Starts -->
+                        <div class="in-active-10 animate__animated animate__fadeIn">
+                            <section class="create-temp-ii">
+                                <div class="title">
+                                    <h2>Create your Template</h2>
+                                    <p>Enter your Template information below</p>
+                                </div>
+
+                                <div class="form-section">
+                                    <span>Choose a category type:</span>
+                                    <select name="filetype">
+                                        <option value="">Existing Category</option>
+                                        <option value="corp">Corporate Agreement</option>
+                                        <option value="comp">Company</option>
+                                        <option value="jv">Jv</option>
+                                    </select>
+                                </div>
+
+                                <div id="form" class="sect-1">
+                                    <form action="#">
+                                        <label for="category">Enter category Name</label>
+                                        <input type="text" id="catname" name="categoryname" placeholder="First Name">
+                                        <label for="fileNamed">Select Image File to Upload</label>
+                                        <label for="filename" id="file-label">choose file</label>
+                                        <input type="file" id="filename" name="filename" placeholder="No file choosen">
+                                        <br>
+                                        <input type="button" id="btn-upload-temp" value="Upload Template">
+                                        <input type="button" id="btn-upload-cancel" value="Cancel">
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- Create Template II Section Ends -->
+
+
+
+                    </section>
+
+
+                    <!-- CORPORATE TEMPLATES STARTS -->
+                    <div class="in-active-8">
+                        <img src="../img/DOCUMENT_ICONIII.png" class="document-img-corporate" alt="">
+                        <section class="corporate">
+                            <div class="inner-sect">
+                                <button class="btn-community" id="corporate-comm">Community</button><button
+                                    class="btn-template" id="corporate-temp">Template</button>
+                            </div>
+                            <div class="inner-sect">
+                                <form class="search-bar" action="#">
+                                    <input type="text" placeholder="Search for documents" name="search">
+                                    <i class="icon"><img src="../img/icon/search.png" alt=""></i>
+                                </form>
+                            </div>
+                            <div class="inner-sect">
+                                <h3>CORPORATE AGREEMENT</h3>
+                            </div>
+                            <div class="inner-sect">
+                                <div class="item">
+                                    <i><img src="../img/icon/DOCUMENT_ICON.png" alt=""></i>
+                                    <p>JOINT VENTURE AGREEMENT</p>
+                                    <!-- <button class="btn-delete">Delete</button> -->
+                                </div>
+                                <div class="item" id="sd-agreement">
+                                    <i><img src="../img/icon/DOCUMENT_ICON.png" alt=""></i>
+                                    <p>SOFTWARE DEVELOPMENT AGREEMENT</p>
+                                    <!-- <button class="btn-delete">Delete</button> -->
+                                </div>
+                                <div class="item">
+                                    <i><img src="../img/icon/DOCUMENT_ICON.png" alt=""></i>
+                                    <p>OPERATING AGREEMENT FOR A LIMITED LIABILITY COMPANY</p>
+                                    <!-- <button class="btn-delete">Delete</button> -->
+                                </div>
+                                <div class="item">
+                                    <i><img src="../img/icon/DOCUMENT_ICON.png" alt=""></i>
+                                    <p>NEW ONE</p>
+                                    <!-- <button class="btn-delete">Delete</button> -->
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- CORPORATE TEMPLATES ENDS -->
+
+
+                </div>
+                <!-- My Template Section Ends  -->
+
+                <!-- Edit Template Questions Starts -->
+                <div class="in-active-9 animate__animated animate__fadeInRight">
+                    <img src="../img/DOCUMENT_ICON_III.png" class="document-img-temp-edit" alt="">
+                    <section id="temp-edit">
+                        <h3 class="preview">Preview</h3>
+                        <div id="cards">
+                            <div id="form" class="card">
+                                <div class="sect-head">
+                                    <h1>Questionnaire</h1>
+                                    <h4>Answer the following to create a template</h4>
+                                </div>
+
+                                <form action="#">
+                                    <label for="" class="input-label">What is the effective date of the
+                                        agreement?</label>
+                                    <input type="text" id="" name="" placeholder="Fill in Answer">
+                                    <label for="" class="input-label">What is the name of developer company?</label>
+                                    <input type="text" id="" name="" placeholder="Fill in Answer">
+                                    <label for="" class="input-label">What is the name of the client?</label>
+                                    <input type="text" id="" name="" placeholder="Fill in Answer">
+                                    <label for="" class="input-label">What is the address of the client?</label>
+                                    <input type="text" id="" name="" placeholder="Fill in Answer">
+                                </form>
+                            </div>
+                            <div class="card index">
+                                <textarea id="editor">
+
+                            SOFTWARE DEVELOPMENT AGREEMENT
+
+                                                              INDEX
+
+
+            
+    DEVELOPERS DUTIES
+    DELIVERY
+    COMPENSATION
+    INTELLECTUAL PROPERTY RIGHTS IN THE SOFTWARE
+    CHANGE IN SPECIFICATIONS
+    CONFIDENTIALITY
+    DEVELOPER WARRANTIES
+    INDEMNIFICATION
+    NO MODIFICATION UNLESS IN WRITING
+    APPLICABLE LAW
+            
+                </textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <button class="btn-temp-prev">Previous</button>
+                        <button class="btn-temp-next">Next</button>
+                        <button class="btn-temp-cancel">Cancel</button>
+                        <button class="btn-temp-finish">Finish</button>
+                    </section>
+                </div>
+                <!-- Edit Template Form II  -->
+                <section id="save-as" class="animate__animated animate__fadeInDown">
+                    <div id="form">
+                        <div class="sect-head">
+                            <h1><span>Questions</span></h1>
+                        </div>
+                        <form action="#">
+                            <label for="" class="input-label">What is the address of the client company?</label>
+                            <input type="text" id="" name="" placeholder="Fill in Answer">
+                            <label for="" class="input-label">What is the final delivery date</label>
+                            <input type="text" id="" name="" placeholder="Fill in Answer">
+                            <label for="" class="input-label">For How long post the delivery of the product shall the
+                                developer
+                                Provide maintenance of the product of the company</label>
+                            <input type="text" id="" name="" placeholder="Fill in Answer">
+                            <label for="" class="input-label">What is the rate per hour for assistancepost-delivery of
+                                the Product</label>
+                            <input type="text" id="" name="" placeholder="Fill in Answer">
+                            <label for="" class="input-label">Within how many days of notice, the breach is to be
+                                remedied
+                                by the developer</label>
+                            <input type="text" id="" name="" placeholder="Fill in Answer">
+                        </form>
+                    </div>
+                </section>
+                <!-- Edit Template Form II  -->
+                <!-- Edit Template Questions Ends -->
+            </section>
+            <!-- Community Template Ends -->
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Insight-Section Starts  -->
+            <section id="insight-sect" class="insight-section tabcontent animate__animated animate__fadeInLeft">
+                <div id="top-section">
+                    <div class="title">
+                        <h1>Get <span>an insight </span>
+                            <br> and perform task
+                        </h1>
+                    </div>
+                    <div class="title">
+                        <img src="../img/undraw_file_manager_re_ms29.png" alt="homeimage" srcset="" class="img-shadow">
+                    </div>
+                </div>
+
+                <div class="btn-section">
+                    <button id="btn-download">Download</button>
+                    <button id="btn-view">View</button>
+                    <button id="btn-edit">Edit</button>
+                    <button id="btn-delete">Delete</button>
+                </div>
+
+                <section id="table">
+                    <table id="documents-2">
+                        <tr>
+                            <th>Select</th>
+                            <th>Renewals</th>
+                            <th>Title</th>
+                            <th>Parties Involved</th>
+                            <th>Effective Date</th>
+                            <th>Expiration Date</th>
+                            <th>Consideration</th>
+                            <th>Liability Cap</th>
+                            <th>Term</th>
+                            <th>Government Law</th>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="file" id="" checked></td>
+                            <td class="negative">-5</td>
+                            <td>GENERAL POWER OF AN ATTORNEY</td>
+                            <td class="negative">Kazmaus, Wizick</td>
+                            <td>22-03-14</td>
+                            <td class="expired">22-05-13</td>
+                            <td>10000</td>
+                            <td>1000</td>
+                            <td>2</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="file" id=""></td>
+                            <td class="negative">-5</td>
+                            <td>SOFTWARE DEVELOPMENT AGREEMENT 10</td>
+                            <td class="negative">Harshita, Aporva</td>
+                            <td>22-03-14</td>
+                            <td class="expired">22-05-13</td>
+                            <td>10000</td>
+                            <td>1000</td>
+                            <td>2</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="file" id=""></td>
+                            <td>8</td>
+                            <td>BILL OF SALES EDITED 14</td>
+                            <td>Kazmaus, Wizick</td>
+                            <td>24-03-22</td>
+                            <td>22-05-26 </td>
+                            <td>10000</td>
+                            <td>1000</td>
+                            <td>2</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="file" id=""></td>
+                            <td>9</td>
+                            <td>SOFTWARE DEVELOPMENT AGREEMENT 2</td>
+                            <td>Kazmaus, Wizick</td>
+                            <td>24-03-22</td>
+                            <td>22-05-26 </td>
+                            <td>10000</td>
+                            <td>1000</td>
+                            <td>2</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="file" id=""></td>
+                            <td>9</td>
+                            <td>SOFTWARE DEVELOPMENT AGREEMENT 2</td>
+                            <td>Kazmaus, Wizick</td>
+                            <td>24-03-22</td>
+                            <td>22-05-26 </td>
+                            <td>10000</td>
+                            <td>1000</td>
+                            <td>2</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="file" id=""></td>
+                            <td>10</td>
+                            <td>SOFTWARE DEVELOPMENT AGREEMENT 2</td>
+                            <td>Kazmaus, Wizick</td>
+                            <td>24-03-22</td>
+                            <td>22-05-26 </td>
+                            <td>10000</td>
+                            <td>1000</td>
+                            <td>2</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="file" id=""></td>
+                            <td>10</td>
+                            <td>SOFTWARE DEVELOPMENT AGREEMENT 2</td>
+                            <td>Kazmaus, Wizick</td>
+                            <td>24-03-22</td>
+                            <td>22-05-26 </td>
+                            <td>10000</td>
+                            <td>1000</td>
+                            <td>2</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="file" id=""></td>
+                            <td>9</td>
+                            <td>SOFTWARE DEVELOPMENT AGREEMENT 2</td>
+                            <td>Kazmaus, Wizick</td>
+                            <td>24-03-22</td>
+                            <td>22-05-26 </td>
+                            <td>10000</td>
+                            <td>1000</td>
+                            <td>2</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="file" id=""></td>
+                            <td>9</td>
+                            <td>SOFTWARE DEVELOPMENT AGREEMENT 2</td>
+                            <td>Kazmaus, Wizick</td>
+                            <td>24-03-22</td>
+                            <td>22-05-26 </td>
+                            <td>10000</td>
+                            <td>1000</td>
+                            <td>2</td>
+                            <td>India</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="file" id=""></td>
+                            <td>10</td>
+                            <td>SOFTWARE DEVELOPMENT AGREEMENT 2</td>
+                            <td>Kazmaus, Wizick</td>
+                            <td>24-03-22</td>
+                            <td>22-05-26 </td>
+                            <td>10000</td>
+                            <td>1000</td>
+                            <td>2</td>
+                            <td>India</td>
+                        </tr>
+                    </table>
+
+                </section>
+            </section>
+            <!-- Insight-Section Ends  -->
+
+
+
+
+
+
+
+
+            <!--  Legal Terminology Starts -->
+            <section id="legal-terminology" class="legal-term tabcontent animate__animated animate__fadeInLeft">
+                <div id="A2"></div>
+                <div class="inner-sect">
+                    <h2>LEGAL TERMINOLOGY</h2>
+                </div>
+                <div class="inner-sect">
+                    <form class="search-bar">
+                        <input type="text" placeholder="Search for documents" id="term-search" name="search">
+                        <button type="button" id="btn-terms"><i class="icon"><img src="../img/icon/search.png"
+                                    alt=""></i></button>
+                    </form>
+                </div>
+
+                <div class="inner-sect" id="terms">
+                    <div class="item">
+                        <h3>a fortiori</h3>
+                        
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ea tempore
+                            neque delectus doloribus ullam saepe eum nemo tempora <span class="dots">...</span> <span class="more-text">
+                                amet aliquid, excepturi eaque asperiores quaerat consequatur animi error? Neque, 
+                                sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, possimus 
+                                facilis? Ad veritatis, enim tenetur, nihil, tempore non dolore accusamus
+                                 consectetur ullam perferendis labore repudiandae tempora voluptatum iste
+                                  molestiae accusantium.
+                            </span></p>
+                            
+                            <button class="btn-read-more">Read More</button>
+                    </div>
+                    <div class="item">
+                        <h3>a priori assumption</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ea tempore
+                            neque delectus doloribus ullam saepe eum nemo tempora <span class="dots">...</span> <span class="more-text">
+                                amet aliquid, excepturi eaque asperiores quaerat consequatur animi error? Neque, 
+                                sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, possimus 
+                                facilis? Ad veritatis, enim tenetur, nihil, tempore non dolore accusamus
+                                 consectetur ullam perferendis labore repudiandae tempora voluptatum iste
+                                  molestiae accusantium.
+                            </span></p>
+                            
+                            <button class="btn-read-more">Read More</button>
+                    </div>
+                    <div class="item">
+                        <h3>a.k.a</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ea tempore
+                            neque delectus doloribus ullam saepe eum nemo tempora <span class="dots">...</span> <span class="more-text">
+                                amet aliquid, excepturi eaque asperiores quaerat consequatur animi error? Neque, 
+                                sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, possimus 
+                                facilis? Ad veritatis, enim tenetur, nihil, tempore non dolore accusamus
+                                 consectetur ullam perferendis labore repudiandae tempora voluptatum iste
+                                  molestiae accusantium.
+                            </span></p>
+                            <button class="btn-read-more">Read More</button>
+                    </div>
+                    <div class="item">
+                        <h3>abandon</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ea tempore
+                            neque delectus doloribus ullam saepe eum nemo tempora <span class="dots">...</span> <span class="more-text">
+                                amet aliquid, excepturi eaque asperiores quaerat consequatur animi error? Neque, 
+                                sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, possimus 
+                                facilis? Ad veritatis, enim tenetur, nihil, tempore non dolore accusamus
+                                 consectetur ullam perferendis labore repudiandae tempora voluptatum iste
+                                  molestiae accusantium.
+                            </span></p>
+                            <button class="btn-read-more">Read More</button>
+                    </div>
+                    <div class="item">
+                        <h3>abate</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ea tempore
+                            neque delectus doloribus ullam saepe eum nemo tempora <span class="dots">...</span> <span class="more-text">
+                                amet aliquid, excepturi eaque asperiores quaerat consequatur animi error? Neque, 
+                                sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, possimus 
+                                facilis? Ad veritatis, enim tenetur, nihil, tempore non dolore accusamus
+                                 consectetur ullam perferendis labore repudiandae tempora voluptatum iste
+                                  molestiae accusantium.
+                            </span></p>
+                            <button class="btn-read-more">Read More</button>
+                    </div>
+                    <div id="B2"></div>
+                    <div class="item">
+                        <h3>b fortiori</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ea tempore
+                            neque delectus doloribus ullam saepe eum nemo tempora <span class="dots">...</span> <span class="more-text">
+                                amet aliquid, excepturi eaque asperiores quaerat consequatur animi error? Neque, 
+                                sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, possimus 
+                                facilis? Ad veritatis, enim tenetur, nihil, tempore non dolore accusamus
+                                 consectetur ullam perferendis labore repudiandae tempora voluptatum iste
+                                  molestiae accusantium.
+                            </span></p>
+                            <button class="btn-read-more">Read More</button>
+                    </div>
+                    <div class="item">
+                        <h3>b priori assumption</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ea tempore
+                            neque delectus doloribus ullam saepe eum nemo tempora <span class="dots">...</span> <span class="more-text">
+                                amet aliquid, excepturi eaque asperiores quaerat consequatur animi error? Neque, 
+                                sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, possimus 
+                                facilis? Ad veritatis, enim tenetur, nihil, tempore non dolore accusamus
+                                 consectetur ullam perferendis labore repudiandae tempora voluptatum iste
+                                  molestiae accusantium.
+                            </span></p>
+                            <button class="btn-read-more">Read More</button>
+                    </div>
+
+                    <div id="C2"></div>
+                    <div class="item">
+                        <h3>c a.k.a</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ea tempore
+                            neque delectus doloribus ullam saepe eum nemo tempora <span class="dots">...</span> <span class="more-text">
+                                amet aliquid, excepturi eaque asperiores quaerat consequatur animi error? Neque, 
+                                sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, possimus 
+                                facilis? Ad veritatis, enim tenetur, nihil, tempore non dolore accusamus
+                                 consectetur ullam perferendis labore repudiandae tempora voluptatum iste
+                                  molestiae accusantium.
+                            </span></p>
+                            <button class="btn-read-more">Read More</button>
+                    </div>
+                    <div class="item">
+                        <h3>c abandon</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ea tempore
+                            neque delectus doloribus ullam saepe eum nemo tempora <span class="dots">...</span> <span class="more-text">
+                                amet aliquid, excepturi eaque asperiores quaerat consequatur animi error? Neque, 
+                                sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, possimus 
+                                facilis? Ad veritatis, enim tenetur, nihil, tempore non dolore accusamus
+                                 consectetur ullam perferendis labore repudiandae tempora voluptatum iste
+                                  molestiae accusantium.
+                            </span></p>
+                            <button class="btn-read-more">Read More</button>
+                    </div>
+                    <div class="item">
+                        <h3>c abate</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ea tempore
+                            neque delectus doloribus ullam saepe eum nemo tempora <span class="dots">...</span> <span class="more-text">
+                                amet aliquid, excepturi eaque asperiores quaerat consequatur animi error? Neque, 
+                                sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, possimus 
+                                facilis? Ad veritatis, enim tenetur, nihil, tempore non dolore accusamus
+                                 consectetur ullam perferendis labore repudiandae tempora voluptatum iste
+                                  molestiae accusantium.
+                            </span></p>
+                            <button class="btn-read-more">Read More</button>
+                    </div>
+                    <div id="D2"></div>
+                    <div id="E2"></div>
+                    <div id="F2"></div>
+                    <div id="G2"></div>
+                    <div id="H2"></div>
+                    <div id="I2"></div>
+                    <div id="J2"></div>
+                    <div id="K2"></div>
+                    <div id="L2"></div>
+                    <div id="M2"></div>
+                    <div id="N2"></div>
+                    <div id="O2"></div>
+                    <div id="P2"></div>
+                    <div id="Q2"></div>
+                    <div id="R2"></div>
+                    <div id="S2"></div>
+                    <div id="T2"></div>
+                    <div id="U2"></div>
+                    <div id="V2"></div>
+                    <div id="W2"></div>
+                    <div id="X2"></div>
+                    <div id="Y2"></div>
+                    <div id="Z2"></div>
+
+                </div>
+                <div class="inner-nav">
+                    <a href="#A2">A</a>
+                    <a href="#B2">B</a>
+                    <a href="#C2">C</a>
+                    <a href="#D2">D</a>
+                    <a href="#E2">E</a>
+                    <a href="#F2">F</a>
+                    <a href="#G2">G</a>
+                    <a href="#H2">H</a>
+                    <a href="#I2">I</a>
+                    <a href="#J2">J</a>
+                    <a href="#K2">K</a>
+                    <a href="#L2">L</a>
+                    <a href="#M2">M</a>
+                    <a href="#N2">N</a>
+                    <a href="#O2">O</a>
+                    <a href="#P2">P</a>
+                    <a href="#Q2">Q</a>
+                    <a href="#R2">R</a>
+                    <a href="#S2">S</a>
+                    <a href="#T2">T</a>
+                    <a href="#U2">U</a>
+                    <a href="#V2">V</a>
+                    <a href="#W2">W</a>
+                    <a href="#X2">X</a>
+                    <a href="#Y2">Y</a>
+                    <a href="#Z2">Z</a>
+                </div>
+            </section>
+            <!--  Legal Terminology Ends -->
+
+
+
+
+
+
+
+            <!-- User-Section Starts  -->
+            <section id="user" class="user-sect tabcontent animate__animated animate__fadeIn">
+                <div class="user">
+                    <div class="profile-pic-div">
+                        <img src="../img/nodp.png" class="display-pic" id="photo" alt="">
+                    </div>
+                    <img id="icon-edit" src="../img/icon/edit-2.png" alt="">
+
+                    <h1>Wizick User</h1>
+                    <span>wizickuser@wizick.com</span>
+                    <button class="btn-display-pic" id="btn-manage"> Manage your account</button>
+                    <button class="btn-add" id="btn-add-account">Add another accout</button>
+                    <a href="../component/signin.html"><button class="btn-sign-out" id="btn-">Sign out</button></a>
+                </div>
+                <p><a href="#"> Privacy Policy</a> &nbsp;&nbsp; | &nbsp; &nbsp; <a href="#"> Terms of Service</a></p>
+
+
+                <!-- Edit Display Picture Section  -->
+                <div class="in-active-3 animate__animated animate__fadeIn">
+                    <section class="upload-pic">
+                        <div id="card">
+                            <h1>Change Profile Picture</h1>
+                            <div class="inner-div">
+                                <div class="profile-pic-div">
+                                    <img src="../img/nodp.png" class="display-pic" id="photo" alt="">
+                                </div>
+                                <label for="file" id="upload-button">
+                                    Upload Picture
+                                </label>
+                                <input type="file" id="file" name="dp-image" hidden>
+                            </div>
+                            <button id="btn-done">Done</button>
+                            <p>Privacy Policy &nbsp;&nbsp; | &nbsp; &nbsp;Terms of Service</p>
+                        </div>
+                    </section>
+                </div>
+                <!-- Edit Display Picture Section  -->
+
+
+                <!-- Manage Account Section Starts -->
+                <div class="in-active animate__animated animate__fadeIn">
+                    <div id="manage-user">
+                        <i><img class="arrow" id="btn-back-arrow1" style="background:#35B7FF; 
+                            border-radius: 50%; position: absolute; left: 130px; 
+                            top: 100px; cursor: pointer;" src="../img/icon/arrow-left.png" alt=""></i>
+                        <div class="inner-div dp-div">
+                            <div class="profile-pic-div">
+                                <img src="../img/nodp.png" class="display-pic" id="photo" alt="">
+                            </div>
+                            <div class="ename">
+                                <h1>Wizick User</h1>
+                                <span>wizickuser@wizick.com</span>
+                            </div>
+
+                        </div>
+                        <div class="inner-div">
+                            <a href="#">Edit</a>
+                            <h3>Name:</h3>
+                            <p class="user-detail user-name">Wizick User</p>
+                        </div>
+                        <div class="inner-div">
+                            <a href="#">Edit</a>
+                            <h3>Mobile Phone Number</h3>
+                            <p class="user-detail user-no.">+91 91234 56789</p>
+                        </div>
+                        <div class="inner-div">
+                            <a href="#" class="active" id="btn-edit-pwd">Edit</a>
+                            <h3>Password</h3>
+                            <p class="user-detail user-pwd">*********</p>
+                        </div>
+                        <a href="../component/signin.html"><button class="btn-sign-out">Sign out</button></a>
+                    </div>
+                    <p><a href="#"> Privacy Policy</a> &nbsp;&nbsp; | &nbsp; &nbsp; <a href="#"> Terms of Service</a>
+                    </p>
+                </div>
+                <!-- Manage Account Section  Ends-->
+                <div class="in-active-2">
+                    <!-- Change Password Section Starts -->
+                    <section id="changepwd-user">
+
+                        <i><img class="arrow" id="btn-back-arrow" style="background:#35B7FF; 
+                border-radius: 50%; position: absolute; left: 30px; 
+                top: 100px; cursor: pointer;" src="../img/icon/arrow-left.png" alt=""></i>
+                        <div class="inner-div dp-div">
+                            <div class="profile-pic-div">
+                                <img src="../img/nodp.png" class="display-pic" id="photo" alt="">
+                            </div>
+                            <div class="ename">
+                                <h1>Wizick User</h1>
+                                <span>wizickuser@wizick.com</span>
+                            </div>
+                        </div>
+                        <section id="changepwd">
+                            <div id="form" class="sect-1">
+                                <div class="sect-head">
+                                    <h1>Reset Password</h1>
+                                </div>
+                                <form action="#">
+                                    <label for="password" class="input-label">Current Password</label>
+                                    <input type="password" id="curpwd" name="curpwd"
+                                        placeholder="Enter Current Password" required>
+
+                                    <label for="password" class="input-label">New Password</label>
+                                    <input type="password" id="npwd" name="npwd" placeholder="Enter New Password"
+                                        required>
+
+                                    <label for="password" class="input-label">Confirm New Password</label>
+                                    <input type="password" id="cpwd" name="cpwd" placeholder="Confirm New Password"
+                                        required>
+                                    <br>
+                                    <input type="submit" id="btn-pwd-submit" value="Submit">
+                                </form>
+                            </div>
+                        </section>
+                        <p>Privacy Policy &nbsp;&nbsp; | &nbsp; &nbsp;Terms of Service</p>
+
+                    </section>
+                    <!-- Change Password Section Ends -->
+                </div>
+
+
+                <!-- Success Section Starts  -->
+                <div class="in-active-4">
+                    <section id="success">
+                        <div id="form" class="sect-1">
+                            <div class="sect-head">
+                                <h1>Password Reset Successful</h1>
+                            </div>
+
+                            <div class="success-img">
+                                <img class="img-3" src="../img/undraw_agree_reset.png" alt="homeimage" srcset="">
+                                <button id="btn-pwd-done">Done</button>
+                            </div>
+                        </div>
+                        <p>Privacy Policy &nbsp;&nbsp; | &nbsp; &nbsp;Terms of Service</p>
+                    </section>
+                </div>
+                <!-- Success Section Ends  -->
+            </section>
+            <!-- User-Section Ends  -->
+
+
+
+
+
+
+            <!--  Notification Section Starts -->
+            <section id="notifications" class="notification tabcontent animate__animated animate__fadeInLeft">
+
+                <div class="inner-sect">
+                    <form class="search-bar" action="#">
+                        <input type="text" id="search-notify" placeholder="Search for notification" name="search">
+                        <button type="submit"><i class="icon"><img src="../img/icon/search.png" alt=""></i></button>
+                    </form>
+                </div>
+                <div class="inner-sect">
+                    <!-- <i id="close"><img src="../img/icon/icon-close.png" alt=""></i> -->
+                    <h4>New Notification <span id="notification-count">(2)</span></h4>
+                </div>
+
+                <div class="inner-sect notificate">
+                    <div class="note">
+                        <p id="date">May 28, 2022</p>
+                        <div class="item">
+                            <i><img src="../img/icon/msword.png" alt=""></i>
+                            <div class="content">
+                                <h3>Community Template Update</h3>
+                                <p>Legal Practional Code of Conduct File has been added to the
+                                    Community Template, Available for download</p>
+                            </div>
+
+                            <span>
+                                <button><i><img src="../img/icon/ant-design_delete-filled.png" alt=""></i></button>
+                                <button><i><img src="../img/icon/bi_pin-angle-fill.png" alt=""></i></button>
+                                <p id="time">7:15am</p>
+                                <button class="new">New</button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="note">
+                        <p id="date">May 28, 2022</p>
+                        <div class="item">
+                            <i><img src="../img/icon/msword.png" alt=""></i>
+                            <div class="content">
+                                <h3>Expiration of Legal Document</h3>
+                                <p>Agreement for Promoting a company.docx will expire
+                                    in 3 days</p>
+                            </div>
+
+                            <span>
+                                <button><i><img src="../img/icon/ant-design_delete-filled.png" alt=""></i></button>
+                                <button><i><img src="../img/icon/bi_pin-angle-fill.png" alt=""></i></button>
+                                <p id="time">7:15am</p>
+                                <button class="new">New</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="note">
+                        <p id="date">May 28, 2022</p>
+                        <div class="item">
+                            <i><img src="../img/icon/msword.png" alt=""></i>
+                            <div class="content">
+                                <h3>Expiration of Legal Document</h3>
+                                <p>JOINT VENTURE AGREEMENT (1).docx will expire
+                                    in 2 days</p>
+                            </div>
+
+                            <span>
+                                <button><i><img src="../img/icon/ant-design_delete-filled.png" alt=""></i></button>
+                                <button><i><img src="../img/icon/bi_pin-angle-fill.png" alt=""></i></button>
+                                <p id="time">7:15am</p>
+                                <button class="read">Read</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="note">
+                        <p id="date">May 28, 2022</p>
+                        <div class="item">
+                            <i><img src="../img/icon/msword.png" alt=""></i>
+                            <div class="content">
+                                <h3>Your renewal of Contract is successful</h3>
+                                <p>Agreement for Promoting a company.docx</p>
+                            </div>
+
+                            <span>
+                                <button><i><img src="../img/icon/ant-design_delete-filled.png" alt=""></i></button>
+                                <button><i><img src="../img/icon/bi_pin-angle-fill.png" alt=""></i></button>
+                                <p id="time">7:15am</p>
+                                <button class="read">Read</button>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <!--  Notification Section Ends -->
+
+        </div>
+        <div class="in-active-modal">
+            <div class="pop-up">
+                <h2>Save</h2>
+                <button id="modal-btn-with-insight">With Insight</button>
+                <button id="modal-btn-without-insight">Without Insight</button>
+                <button id="modal-btn-as-template">As Template</button>
+                <button id="modal-btn-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+
+        // Community Template Slider
+        let right = [...document.querySelectorAll("#btn-com-right")];
+        let left = [...document.querySelectorAll("#btn-com-left")];
+        let commCards = [...document.querySelectorAll(".comm-cards")];
+
+
+        commCards.forEach((item, i) => {
+            let containerDimensions = item.getBoundingClientRect();
+            let containerWidth = containerDimensions.width;
+
+            right[i].addEventListener('click', () => {
+                item.scrollLeft += containerWidth;
+            });
+            left[i].addEventListener('click', () => {
+                item.scrollLeft -= containerWidth;
+            });
+        });
+
+
+
+        //  My-Template Slider
+        let right2Nav = [...document.querySelectorAll("#btn-temp-right")];
+        let left2Nav = [...document.querySelectorAll("#btn-temp-left")];
+        let tempCardsNav = [...document.querySelectorAll(".mytemp-cards")];
+
+        tempCardsNav.forEach((item2, k) => {
+
+            let containerDimensionsTemp = item2.getBoundingClientRect();
+            let containerWidthTemp = containerDimensionsTemp.width;
+
+            right2Nav[k].addEventListener('click', () => {
+                item2.scrollLeft += containerWidthTemp;
+            });
+            left2Nav[k].addEventListener('click', () => {
+                item2.scrollLeft -= containerWidthTemp;
+            });
+        });
+
+
+    </script>
+
+
+
+    <!-- <script>
+                    
+        let rightNav = [...document.querySelectorAll("#btn-com-right")];
+        let leftNav = [...document.querySelectorAll("#btn-com-left")];
+        let commCardsNav = [...document.querySelectorAll("#community-temp > .comm-cards")];
+        
+        
+        commCardsNav.forEach((item, i) => {
+            let containerDimensions = item.getBoundingClientRect();
+            let containerWidth = containerDimensions.width;
+           
+            rightNav[i].addEventListener('click', () => {
+                item.scrollLeft += containerWidth;
+                console.log(containerWidth);
+        });
+            leftNav[i].addEventListener('click', () => {
+                item.scrollLeft -= containerWidth;
+        });
+     });
+
+
+
+    //  My Template Slider
+
+    const right2Nav = [...document.querySelectorAll("#btn-temp-right")];
+    const left2Nav = [...document.querySelectorAll("#btn-temp-left")];
+    const tempCardsNav = [...document.querySelectorAll("#community-temp > .mytemp-cards")];
+    
+        tempCardsNav.forEach((item2, k) => {
+            let containerDimension = item2.getBoundingClientRect();
+            let containerWidth2 = containerDimension.width;
+            
+            right2Nav[0].addEventListener('click', () => {
+                item2.scrollLeft += containerWidth2;
+                console.log(containerDimension);
+        });
+            left2Nav[0].addEventListener('click', () => {
+                item2.scrollLeft -= containerWidth2;
+        });
+     });
+
+    </script> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0-rc.1/dist/chartjs-plugin-datalabels.min.js"
+        integrity="sha256-Oq8QGQ+hs3Sw1AeP0WhZB7nkjx6F1LxsX6dCAsyAiA4=" crossorigin="anonymous"></script>
+    <script src="./dashboardjs/chart1.js"></script>
+    <script src="./dashboardjs/chart2.js"></script>
+    <!-- <script src="../js/all.js"></script> -->
+
+    <script src="../js/main.js"></script>
+    <!-- <script>
+        tinymce.init({
+            selector: "#editor",
+            plugins: "powerpaste casechange searchreplace autolink directionality advcode visualblocks visualchars image link media mediaembed codesample table charmap pagebreak nonbreaking anchor tableofcontents insertdatetime advlist lists checklist wordcount tinymcespellchecker editimage help formatpainter permanentpen charmap tinycomments linkchecker emoticons advtable export print autosave",
+            toolbar: "undo redo print spellcheckdialog formatpainter | blocks fontfamily fontsize | bold italic underline forecolor backcolor | link image addcomment showcomments  | alignleft aligncenter alignright alignjustify lineheight | checklist bullist numlist indent outdent | removeformat",
+            height: '700px',
+            toolbar_sticky: true,
+            icons: 'thin',
+            autosave_restore_when_empty: true,
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'john.doe',
+            tinycomments_author_name: 'John Doe',
+            content_style: `
+                body {
+                    background: #fff;
+                }
+
+                @media (min-width: 840px) {
+                    html {
+                        background: #eceef4;
+                        min-height: 100%;
+                        padding: 0 .5rem
+                    }
+
+                    body {
+                        background-color: #fff;
+                        box-shadow: 0 0 4px rgba(0, 0, 0, .15);
+                        box-sizing: border-box;
+                        margin: 1rem auto 0;
+                        max-width: 820px;
+                        min-height: calc(100vh - 1rem);
+                        padding:4rem 6rem 6rem 6rem
+                    }
+                }
+                `,
+        });
+    </script> -->
+
+
+
+
+</body>
+
+</html>
